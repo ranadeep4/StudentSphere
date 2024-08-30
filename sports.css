@@ -1,0 +1,44 @@
+/* header{
+    background-color: cadetblue;
+    margin-top: 0;
+} */
+body{
+    margin: 0;
+    font-family: monospace;
+    top: 0;
+}
+.head{
+    margin-top: 0;
+    background-color: darkcyan;
+    display: flex;
+    /* position: static; */
+    /* align-items: center; */
+}
+.head_items{
+    padding-left: 2rem;
+}
+.head_items a{
+    /* position: fi; */
+    text-decoration: none;
+    color: aliceblue;
+}
+.head_items a:hover{
+    font-size: 1.75rem;
+    position: relative;
+}
+
+.live{
+    width: 40rem;
+    height: 20rem;
+    background-color: rgba(118, 115, 115, 0.119);
+    /* margin-top: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    left: 25%;
+    border: solid black 4px;
+}
+.live:hover{
+    box-shadow:2px 2px 8px black ;
+}
