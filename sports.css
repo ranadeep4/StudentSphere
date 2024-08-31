@@ -7,21 +7,7 @@ body{
     font-family: monospace;
     top: 0;
 }
-.head{
-    margin-top: 0;
-    background-color: darkcyan;
-    display: flex;
-    /* position: static; */
-    /* align-items: center; */
-}
-.head_items{
-    padding-left: 2rem;
-}
-.head_items a{
-    /* position: fi; */
-    text-decoration: none;
-    color: aliceblue;
-}
+
 .head_items a:hover{
     font-size: 1.75rem;
     position: relative;
