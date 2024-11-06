@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Job</title>
+    <link rel="stylesheet" href="jobsform.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>Add New Job</h1>
+        <form id="jobForm">
+            <label for="companyName">Company Name: </label>
+            
+            <input type="text" id="companyName" placeholder="companyName" required>
+            
+            <label for="jobRole">Role: </label>
+            
+            <input type="text" id="jobRole" placeholder="role" required>
+
+            <label for="jobSalary">Expected Salary: </label>
+            
+            <input type="number" id="jobSalary" placeholder="salary" required>
+            
+            <label for="registrationEndDate">Last date of Registration:</label>
+            
+            <input type="date" id="registrationEndDate" required>
+            
+            <label for="description">Qualifications:</label>
+            
+            <!-- <input type="text" id="description" placeholder="description"> -->
+            <textarea name="description" rows="5" cols ="20" id="description" placeholder="Write about the Event"></textarea>
+            
+            <label for="registrationLink">Registration Link:</label>
+            
+            <input type="url" id="registrationLink" placeholder="Registration Link" required>
+            
+            <button type="submit">Add Job</button>
+        </form>
+        
+    </div>
+    
+    <button class="bktojobs" onclick="location.href='jobshome.html'">Back to Jobs</button> <!-- Link to event list -->
+    
+    <script src="jobshome.js"></script>
+</body>
+</html>

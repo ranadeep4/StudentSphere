@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="eventform.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>Add New Event</h1>
+        <form id="eventForm">
+            <label for="eventName">Event Name: </label>
+        
+            <input type="text" id="eventName" placeholder="Event Name" required>
+            
+            <label for="registrationEndDate">Last date of Registration:</label>
+            
+            <input type="date" id="registrationEndDate" required>
+            
+            <label for="description">Description:</label>
+            
+            <!-- <input type="text" id="description" placeholder="description"> -->
+            <textarea name="description" rows="5" cols ="20" id="description" placeholder="Write about the Event"></textarea>
+            
+            <label for="registrationLink">Registration Link:</label>
+            
+            <input type="url" id="registrationLink" placeholder="Registration Link" required>
+            
+            <label for="imagelink">Image URL:</label>
+            
+            <input type="url" id="imagelink" placeholder="Select Image" >
+            
+            <button type="submit">Add Event</button>
+        </form>
+        
+    </div>
+    
+    <button class="bktoevents" onclick="location.href='eventshome.html'">Back to Events</button> <!-- Link to event list -->
+    
+    <script src="eventshome.js"></script>
+</body>
+</html>

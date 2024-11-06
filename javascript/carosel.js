@@ -7,39 +7,33 @@ let index = 0;
 const totalSlides = slides.length;
 
 function showSlide(i) {
-    if (i >= totalSlides) {
-        index = 0;
-    } else if (i < 0) {
-        index = totalSlides - 1;
-    } else {
-        index = i;
-    }
+    index = i%totalSlides
     carouselSlides.style.transform = `translateX(-${index * 100}%)`;
 }
 
 prevButton.addEventListener('click', () => {
-    showSlide(index - 1);
+    showSlide((index - 1)%totalSlides);
 });
 
 nextButton.addEventListener('click', () => {
-    showSlide(index + 1);
+    showSlide((index + 1)%totalSlides);
 });
 
 let slideInterval = setInterval(() => {
-    showSlide(index + 1);
+    showSlide((index + 1)%totalSlides);
 }, 2000);
 
 // Optional: Clear and reset interval on manual navigation
 prevButton.addEventListener('click', () => {
     clearInterval(slideInterval);
     slideInterval = setInterval(() => {
-        showSlide(index + 1);
+        showSlide((index + 1)%totalSlides);
     }, 2000);
 });
 
 nextButton.addEventListener('click', () => {
     clearInterval(slideInterval);
     slideInterval = setInterval(() => {
-        showSlide(index + 1);
+        showSlide((index + 1)%totalSlides);
     }, 2000);
 });
